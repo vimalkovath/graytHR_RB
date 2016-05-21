@@ -1,2 +1,3 @@
-# graytHR_RB
-user-Room booking codes
+# server
+
+a [Sails](http://sailsjs.org) application
