@@ -1,0 +1,89 @@
+<div ng-controller="PerformanceController as vm">
+
+
+
+
+
+
+
+  <form name="vm.user" ng-submit="vm.add()">
+      <!-- <div layout layout-sm="column">
+          <md-input-container flex="80">
+              <label>Company (Disabled)</label>
+              <input ng-model="vm.user.company" disabled>
+          </md-input-container>
+          <md-input-container flex>
+              <label>Submission Date</label>
+              <input type="date" ng-model="vm.user.submissionDate">
+          </md-input-container>
+      </div> -->
+      <div layout layout-sm="column">
+          <md-input-container flex>
+              <label>name</label>
+              <input ng-model="vm.user.name">
+          </md-input-container>
+          <md-input-container flex>
+              <label>capacity</label>
+              <input ng-model="vm.user.capacity">
+          </md-input-container>
+          <md-input-container flex>
+              <label>Floor</label>
+              <input ng-model="vm.user.floor">
+          </md-input-container>
+
+      </div>
+
+      <!-- <div layout layout-sm="column">
+          <md-input-container flex>
+              <label>type</label>
+              <md-select ng-model="vm.userBrand">
+                <md-option ng-repeat="brand in vm.brands" value="{{brand.abbrev}}">
+                  {{brand.abbrev}}
+                </md-option>
+              </md-select>
+          </md-input-container>
+      </div> -->
+
+
+
+      <div layout layout-md="column">
+        <label>Anexture ::::  </label>
+        <md-checkbox  ng-model="vm.user.projector">
+            Projector
+        </md-checkbox>
+        <md-checkbox  ng-model="vm.user.teliConference">
+            teliConference
+        </md-checkbox>
+        <md-checkbox  ng-model="vm.user.videoConference">
+            videoConference
+        </md-checkbox>
+        <md-checkbox  ng-model="vm.user.wifi">
+            wifi
+        </md-checkbox>
+        <md-checkbox  ng-model="vm.user.whiteboard">
+            whiteboard
+        </md-checkbox>
+
+
+
+        </div>
+
+          <div layout layout-sm="column">
+
+          <md-input-container flex>
+              <label>Description</label>
+              <textarea ng-model="vm.user.discription" columns="1"
+                        md-maxlength="150"></textarea>
+          </md-input-container>
+
+
+      </div>
+
+      <md-button class="md-fab md-wayrn md-mini" type="submit">
+          <i class="material-icons">add</i>
+      </md-button>
+
+
+        </form>
+
+</div>

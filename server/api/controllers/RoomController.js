@@ -64,11 +64,7 @@ show: function(req, res, next) {
     Room.update(req.param('id'), paramObj, function roomUpdated(err) {
       if (err) {
         console.log(err);
-
-        req.session.flash = {
-          err: err
-        }
-
+        req.session.flash = {  err: err   }
         return res.json(err);
       }
     res.redirect('/room/show/' + req.param('id'));
@@ -76,24 +72,15 @@ show: function(req, res, next) {
   },
 
   destroy: function(req, res, next) {
-
     Room.findOne(req.param('id'), function foundRoom(err, room) {
       if (err) return next(err);
-
       if (!room) return next('room doesn\'t exist.');
-
       Room.destroy(req.param('id'), function roomtypeDestroyed(err) {
         if (err) return next(err);
     });
-
       res.redirect('/room');
-
     });
   },
-
-
-
-
 
 
 };

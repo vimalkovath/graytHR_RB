@@ -1,0 +1,12 @@
+// injector
+// endinjector
+
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+    background-color: rgb(231,87,83);
+    color: rgba(255,255,255,0.87);
+}
+md-toolbar.md-default-theme.md-warn:not(.md-menu-toolbar), md-toolbar.md-warn:not(.md-menu-toolbar) {
+    background-color: rgb(40, 36, 111);
+    color: rgba(0,0,0,0.87);
+}
